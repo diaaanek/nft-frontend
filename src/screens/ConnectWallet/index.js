@@ -4,7 +4,10 @@ import cn from "classnames";
 import styles from "./ConnectWallet.module.sass";
 import Icon from "../../components/Icon";
 import Checkbox from "../../components/Checkbox";
-
+import TextInput from "../../components/TextInput";
+import Modal from "../../components/Modal";
+import Actions from "../../components/Actions";
+import { sassNull } from "sass";
 const menu = [
   {
     title: "Coinbase Wallet",
@@ -26,6 +29,7 @@ const menu = [
 
 const Connect = () => {
   const [age, setAge] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [conditions, setConditions] = useState(false);
 
   return (
@@ -37,10 +41,13 @@ const Connect = () => {
             <div className={cn("h4", styles.stage)}>Connect your wallet</div>
           </Link>
         </div>
+
         <div className={styles.body}>
           <div className={styles.menu}>
             {menu.map((x, index) => (
-              <div
+              <Link
+                to='/upload-variants'
+                style={{ color: "white" }}
                 className={cn({ [styles.active]: index === 1 }, styles.link)}
                 key={index}
               >
@@ -55,66 +62,31 @@ const Connect = () => {
                 <div className={styles.arrow}>
                   <Icon name='arrow-next' size='14' />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className={styles.wrapper}>
             <div className={styles.bg}>
               <img
-                srcSet='https://v1.cosmos.network/img/community-section-cosmonaut.9bae2dfb.svg'
+                srcSet='https://res.cloudinary.com/dxrvvjvpf/image/upload/v1643391342/astronaut_1.png'
+                style={{ height: "250px", width: "250px" }}
                 src='/images/content/connect-bg.jpg'
                 alt='Connect wallet'
               />
             </div>
-            <div className={styles.item}>
-              {/* <div className={cn("h3", styles.title)}>Scan to connect</div>
-              <div className={styles.text}>Powered by Terra Luna</div>
-              <div className={styles.box}>
-                <div className={styles.code}>
-                  <img src='/images/content/qr-code.png' alt='Qr-code' />
-                </div>
-              </div>
-              <button className={cn("button-stroke", styles.button)}>
-                Don’t have a wallet app?
-              </button>
-            </div>
-            <div className={styles.item}>
-              <div className={cn("h3", styles.title)}>Terms of service</div>
-              <div className={styles.text}>
-                Please take a few minutes to read and understand{" "}
-                <span>Stacks Terms of Service</span>. To continue, you’ll need
-                to accept the terms of services by checking the boxes.
-              </div>
-              <div className={styles.preview}>
-                <img
-                  srcSet='/images/content/connect-pic@2x.jpg 2x'
-                  src='/images/content/connect-pic.jpg'
-                  alt='Connect wallet'
-                />
-              </div> */}
-              {/* <div className={styles.variants}>
-                <Checkbox
-                  className={styles.checkbox}
-                  value={age}
-                  onChange={() => setAge(!age)}
-                  content='I am at least 13 year old'
-                />
-                <Checkbox
-                  className={styles.checkbox}
-                  value={conditions}
-                  onChange={() => setConditions(!conditions)}
-                  content='I agree Stack terms of service'
-                />
-              </div> */}
+            {/* <div className={styles.item}>
               <div className={styles.btns}>
                 <button className={cn("button-stroke", styles.button)}>
                   Cancel
                 </button>
-                <button className={cn("button", styles.button)}>
+                <Link
+                  className={cn("button", styles.button)}
+                  to='/upload-variants'
+                >
                   Get started now
-                </button>
+                </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

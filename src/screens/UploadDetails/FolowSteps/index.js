@@ -8,12 +8,12 @@ import LoaderCircle from "../../../components/LoaderCircle";
 const FolowSteps = ({ className }) => {
   return (
     <div className={cn(className, styles.steps)}>
-      <div className={cn("h4", styles.title)}>Folow steps</div>
+      <div className={cn("h4", styles.title)}>Processing Swap</div>
       <div className={styles.list}>
-        <div className={cn(styles.item, styles.done)}>
+        {/* <div className={cn(styles.item, styles.done)}>
           <div className={styles.head}>
             <div className={styles.icon}>
-              <Icon name="upload-file" size="24" />
+              <Icon name='upload-file' size='24' />
             </div>
             <div className={styles.details}>
               <div className={styles.info}>Upload files & Mint token</div>
@@ -21,11 +21,11 @@ const FolowSteps = ({ className }) => {
             </div>
           </div>
           <button className={cn("button done", styles.button)}>Done</button>
-        </div>
-        <div className={styles.item}>
+        </div> */}
+        {/* <div className={styles.item}>
           <div className={styles.head}>
             <div className={styles.icon}>
-              <Icon name="pencil" size="24" />
+              <Icon name='pencil' size='24' />
             </div>
             <div className={styles.details}>
               <div className={styles.info}>Sign sell order</div>
@@ -37,27 +37,27 @@ const FolowSteps = ({ className }) => {
           <button className={cn("button disabled", styles.button)}>
             Start now
           </button>
-        </div>
+        </div> */}
         <div className={styles.item}>
           <div className={styles.head}>
             <div className={styles.icon}>
-              <LoaderCircle className={styles.loader} />
+              <Icon name='bag' size='24' />
             </div>
             <div className={styles.details}>
-              <div className={styles.info}>Sign sell order</div>
+              <div className={styles.info}>Hang tight!</div>
               <div className={styles.text}>
-                Sign sell order using your wallet
+                Please wait while we process your swap
               </div>
             </div>
           </div>
           <button className={cn("button loading", styles.button)}>
-            <Loader className={styles.loader} color="white" />
+            <Loader className={styles.loader} color='white' />
           </button>
         </div>
-        <div className={cn(styles.item, styles.error)}>
+        {/* <div className={cn(styles.item, styles.error)}>
           <div className={styles.head}>
             <div className={styles.icon}>
-              <Icon name="pencil" size="24" />
+              <Icon name='pencil' size='24' />
             </div>
             <div className={styles.details}>
               <div className={styles.info}>Sign sell order</div>
@@ -67,11 +67,11 @@ const FolowSteps = ({ className }) => {
             </div>
           </div>
           <button className={cn("button error", styles.button)}>Failed</button>
-        </div>
-        <div className={styles.item}>
+        </div> */}
+        {/* <div className={styles.item}>
           <div className={styles.head}>
             <div className={styles.icon}>
-              <Icon name="bag" size="24" />
+              <Icon name='bag' size='24' />
             </div>
             <div className={styles.details}>
               <div className={styles.info}>Sign lock order</div>
@@ -81,11 +81,11 @@ const FolowSteps = ({ className }) => {
             </div>
           </div>
           <button className={cn("button", styles.button)}>Start now</button>
-        </div>
+        </div> */}
       </div>
       <div className={styles.note}>
-        Something went wrong, please{" "}
-        <a href="/#" target="_blank" rel="noopener noreferrer">
+        If this swap does not complete in 25 seconds, please{" "}
+        <a href='/#' target='_blank' rel='noopener noreferrer'>
           try again
         </a>
       </div>

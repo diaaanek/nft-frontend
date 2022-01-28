@@ -88,59 +88,68 @@ const Hero = () => {
               Swap Your NFTs Securely and Easily
             </h2>
             <p className={cn("body-1", styles.subtitle)}>
-              NFTZwap lets you swap your NFTs simply and safely using the Terra
-              & Luna exchange.
+              Say goodbye to high gas fees on open sea. NFTSwap is a P2P
+              decentralized and <strong>trustless</strong> dapp that lets you
+              swap your NFTs simply and safely using the Terra exchange.
             </p>
             <br />
-            <Link className={cn("button-filled", styles.button)} to='/search01'>
+            <Link className={cn("button-filled", styles.button)} to='/'>
               Make a Trade
             </Link>
             <span style={{ marginRight: "16px" }} />
-            <Link className={cn("button-stroke", styles.button)} to='/search01'>
+            <Link className={cn("button-stroke", styles.button)} to='/upload'>
               Check My Trades
             </Link>
-          </div>
 
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/PmEaLtImJTLlgbJKgYenuMAo6e4UTM791ckWPx_zPixAEX6tDzcf5toRwYaRcXzY70W32JEgQjK14MFZZW16lZnbjEwHYN8kAI3GXQ=w600'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/vKl8PjUg-q_2hh0OuO2389grv7Ti-BEqikuEZ_N2v_k9d7plJOeTntJkzVFeEs6wYPRD_F1euZeXnN8uLxJ04BdPgjR7zk6ozIIRmg=w306'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/V7883xf29gKS7vR9_eUvltiW7WJqDpi2TfIIf_GZcCXvCKcckGREjY9Kmd8smSAYQpPhPgFYiUKrHKBSZAoeyG9_dosKepkCNjos6A=w600'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/5bQRBSuaks8oWom_O049CPg7OKUVufkAx1GtLrAs_EZVbGB-09vvfU325Y8ZDK_95pMZlXLZm61IU-Dwp953hHwGe3NApJUCyvkN=w600'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/gxVdtkqI_fTWp3xQpKQd75d4wTjufLUHY9huzMBacEOUj36p7L4aNdRSrX3JsyZjhGt95WiX4HkizpboppQDzrBDrQJGBFxjnyQB=w600'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/HgJBjXZwASM8k_hCYwynrZfKJ9PUA4WgT-sCOkSexO2Kg0lptLxOwTADS0V6g83NeX-GzAZ5u4yBmPqJM9bRPw8PQWlvbmQhozdoMw=w600'
-          />
-          <img
-            class='Floater'
-            src='https://lh3.googleusercontent.com/SU8weJLu9jIJ29nLY3LlPbp00daQJOagK9LxL9tNuhL7WneCxEi61QmtToJk5Z4IOC4-_A7fvJ7ZRvf3tCjwk8I-_n-mGB-ZnXx2Qg=w600'
-          />
-          {/* <img
-              class='Floater'
-              src='https://lh3.googleusercontent.com/JGKDfyj3fWxTjXMislM1vLcPQKGM5os5R2xXsYlFDQmpEfRp7eOcdvhsa18zsq4eLdkQfRmWbbmq_6bbwKWctTs6oWg6cu3RyZBh94w=w600'
-            />
-            <img
-              class='Floater'
-              src='https://lh3.googleusercontent.com/jSlDmqYPGvAJFa-CCrsdZf-sjSHmElmhkqvNlY9cFKne__WrHNYqo3KMZDKCdVtPACHSm7ZLOJoIP2U7IYaDiWpWAAaFe9Dl1UDI=w600'
-            />
-            <img
-              class='Floater'
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8riIbeZ82UI2SyJX1g4uq8OHG7XlCCMECnZX-_7T6ajGcowB8iiWfO8-m5qNHzrVpq1s&usqp=CAU'
-            /> */}
+            <div
+              style={{
+                margin: "0 auto",
+                textAlign: "center",
+                marginTop: "70px",
+              }}
+            >
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/PmEaLtImJTLlgbJKgYenuMAo6e4UTM791ckWPx_zPixAEX6tDzcf5toRwYaRcXzY70W32JEgQjK14MFZZW16lZnbjEwHYN8kAI3GXQ=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/vKl8PjUg-q_2hh0OuO2389grv7Ti-BEqikuEZ_N2v_k9d7plJOeTntJkzVFeEs6wYPRD_F1euZeXnN8uLxJ04BdPgjR7zk6ozIIRmg=w306'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/V7883xf29gKS7vR9_eUvltiW7WJqDpi2TfIIf_GZcCXvCKcckGREjY9Kmd8smSAYQpPhPgFYiUKrHKBSZAoeyG9_dosKepkCNjos6A=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/5bQRBSuaks8oWom_O049CPg7OKUVufkAx1GtLrAs_EZVbGB-09vvfU325Y8ZDK_95pMZlXLZm61IU-Dwp953hHwGe3NApJUCyvkN=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/gxVdtkqI_fTWp3xQpKQd75d4wTjufLUHY9huzMBacEOUj36p7L4aNdRSrX3JsyZjhGt95WiX4HkizpboppQDzrBDrQJGBFxjnyQB=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/HgJBjXZwASM8k_hCYwynrZfKJ9PUA4WgT-sCOkSexO2Kg0lptLxOwTADS0V6g83NeX-GzAZ5u4yBmPqJM9bRPw8PQWlvbmQhozdoMw=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/SU8weJLu9jIJ29nLY3LlPbp00daQJOagK9LxL9tNuhL7WneCxEi61QmtToJk5Z4IOC4-_A7fvJ7ZRvf3tCjwk8I-_n-mGB-ZnXx2Qg=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/JGKDfyj3fWxTjXMislM1vLcPQKGM5os5R2xXsYlFDQmpEfRp7eOcdvhsa18zsq4eLdkQfRmWbbmq_6bbwKWctTs6oWg6cu3RyZBh94w=w600'
+              />
+              <img
+                class='Floater'
+                src='https://lh3.googleusercontent.com/jSlDmqYPGvAJFa-CCrsdZf-sjSHmElmhkqvNlY9cFKne__WrHNYqo3KMZDKCdVtPACHSm7ZLOJoIP2U7IYaDiWpWAAaFe9Dl1UDI=w600'
+              />
+              <img
+                class='Floater'
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8riIbeZ82UI2SyJX1g4uq8OHG7XlCCMECnZX-_7T6ajGcowB8iiWfO8-m5qNHzrVpq1s&usqp=CAU'
+              />
+            </div>
+          </div>
 
           <div style={{ marginTop: "150px" }} />
 

@@ -17,15 +17,18 @@ const breadcrumbs = [
 const items = [
   {
     url: "/upload-details",
-    buttonText: "Create Single",
-    image: "/images/content/upload-pic-1.jpg",
-    image2x: "/images/content/upload-pic-1@2x.jpg",
+    buttonText: "Swap Single",
+    image: "https://c.tenor.com/lwtcdNM9srEAAAAM/fish-lover-pudgy-penguins.gif",
+    image2x:
+      "https://c.tenor.com/lwtcdNM9srEAAAAM/fish-lover-pudgy-penguins.gif",
   },
   {
     url: "/upload-details",
-    buttonText: "Create Multiple",
-    image: "/images/content/upload-pic-2.jpg",
-    image2x: "/images/content/upload-pic-2@2x.jpg",
+    buttonText: "Swap Multiple",
+    image:
+      "https://www.cointribune.com/app/uploads/2021/08/ezgif-3-69ba78453c23.jpg",
+    image2x:
+      "https://www.cointribune.com/app/uploads/2021/08/ezgif-3-69ba78453c23.jpg",
   },
 ];
 
@@ -36,7 +39,7 @@ const Upload = () => {
       <div className={cn("section-pt80", styles.section)}>
         <div className={cn("container", styles.container)}>
           <div className={styles.top}>
-            <h1 className={cn("h2", styles.title)}>Upload item</h1>
+            <h1 className={cn("h2", styles.title)}>Create Swap</h1>
             <div className={styles.info}>
               Choose <span>“Single”</span> if you want your collectible to be
               one of a kind or <span>“Multiple”</span> if you want to sell one
@@ -47,7 +50,7 @@ const Upload = () => {
             {items.map((x, index) => (
               <div className={styles.item} key={index}>
                 <div className={styles.preview}>
-                  <img srcSet={`${x.image2x} 2x`} src={x.image} alt="Upload" />
+                  <img srcSet={`${x.image2x} 2x`} src={x.image} alt='Upload' />
                 </div>
                 <Link className={cn("button-stroke", styles.button)} to={x.url}>
                   {x.buttonText}

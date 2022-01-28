@@ -9,7 +9,7 @@ import Theme from "../Theme";
 
 const items = [
   {
-    title: "Crypter.",
+    title: "NFT Swap.",
     menu: [
       {
         title: "Discover",
@@ -48,18 +48,20 @@ const Footers = () => {
       <div className={cn("container", styles.container)}>
         <div className={styles.row}>
           <div className={styles.col}>
-            <Link className={styles.logo} to="/">
+            <Link className={styles.logo} to='/'>
               <Image
                 className={styles.pic}
-                src="/images/logo-dark.png"
-                srcDark="/images/logo-light.png"
-                alt="Fitness Pro"
+                src='/images/logo-dark.png'
+                srcDark='/images/logo-light.png'
+                alt='Fitness Pro'
               />
             </Link>
-            <div className={styles.info}>The New Creative Economy.</div>
+            <div className={styles.info}>
+              Swap Your NFTs Securely and Easily
+            </div>
             <div className={styles.version}>
               <div className={styles.details}>Dark theme</div>
-              <Theme className="theme-big" />
+              <Theme className='theme-big' />
             </div>
           </div>
           <div className={styles.col}>
@@ -68,28 +70,25 @@ const Footers = () => {
             ))}
           </div>
           <div className={styles.col}>
-            <div className={styles.category}>Join Newsletter</div>
+            <div className={styles.category}>Join Our Beta List</div>
             <div className={styles.text}>
-              Subscribe our newsletter to get more free design course and
-              resource
+              We are currently in Beta phase, so please use NFT Trader at your
+              own discretion.
             </div>
             <Form
               className={styles.form}
               value={email}
               setValue={setEmail}
               onSubmit={() => handleSubmit()}
-              placeholder="Enter your email"
-              type="email"
-              name="email"
+              placeholder='Enter your email'
+              type='email'
+              name='email'
             />
           </div>
         </div>
         <div className={styles.foot}>
           <div className={styles.copyright}>
-            Copyright © 2021 UI8 LLC. All rights reserved
-          </div>
-          <div className={styles.note}>
-            We use cookies for better service. <a href="/#">Accept</a>
+            Copyright © 2021 MHW. All rights reserved
           </div>
         </div>
       </div>

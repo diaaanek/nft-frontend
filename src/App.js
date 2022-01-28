@@ -20,7 +20,7 @@ function App() {
       <Switch>
         <Route
           exact
-          path="/"
+          path='/'
           render={() => (
             <Page>
               <Home />
@@ -29,7 +29,7 @@ function App() {
         />
         <Route
           exact
-          path="/upload-variants"
+          path='/upload-variants'
           render={() => (
             <Page>
               <UploadVariants />
@@ -38,7 +38,7 @@ function App() {
         />
         <Route
           exact
-          path="/upload-details"
+          path='/upload-details'
           render={() => (
             <Page>
               <UploadDetails />
@@ -47,7 +47,7 @@ function App() {
         />
         <Route
           exact
-          path="/connect-wallet"
+          path='/connect-wallet'
           render={() => (
             <Page>
               <ConnectWallet />
@@ -56,7 +56,7 @@ function App() {
         />
         <Route
           exact
-          path="/faq"
+          path='/faq'
           render={() => (
             <Page>
               <Faq />
@@ -65,7 +65,7 @@ function App() {
         />
         <Route
           exact
-          path="/activity"
+          path='/activity'
           render={() => (
             <Page>
               <Activity />
@@ -74,7 +74,7 @@ function App() {
         />
         <Route
           exact
-          path="/search01"
+          path='/search01'
           render={() => (
             <Page>
               <Search01 />
@@ -83,7 +83,7 @@ function App() {
         />
         <Route
           exact
-          path="/search02"
+          path='/search02'
           render={() => (
             <Page>
               <Search02 />
@@ -92,7 +92,7 @@ function App() {
         />
         <Route
           exact
-          path="/profile"
+          path='/profile'
           render={() => (
             <Page>
               <Profile />
@@ -101,7 +101,7 @@ function App() {
         />
         <Route
           exact
-          path="/profile-edit"
+          path='/profile-edit'
           render={() => (
             <Page>
               <ProfileEdit />
@@ -110,7 +110,7 @@ function App() {
         />
         <Route
           exact
-          path="/item"
+          path='/item'
           render={() => (
             <Page>
               <Item />
@@ -119,7 +119,7 @@ function App() {
         />
         <Route
           exact
-          path="/pagelist"
+          path='/pagelist'
           render={() => (
             <Page>
               <PageList />

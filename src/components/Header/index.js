@@ -42,7 +42,7 @@ const Headers = () => {
             className={styles.pic}
             src='/images/logo-dark.png'
             srcDark='/images/logo-light.png'
-            alt='Fitness Pro'
+            alt='nft swap'
           />
         </Link>
         <div className={cn(styles.wrapper, { [styles.active]: visibleNav })}>

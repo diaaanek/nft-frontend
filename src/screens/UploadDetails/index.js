@@ -11,7 +11,7 @@ import Preview from "./Preview";
 import Cards from "./Cards";
 import FolowSteps from "./FolowSteps";
 
-const royaltiesOptions = ["10%", "20%", "30%"];
+const royaltiesOptions = ["10 UST", "20%", "30%"];
 
 const items = [
   {
@@ -48,55 +48,53 @@ const Upload = () => {
         <div className={cn("container", styles.container)}>
           <div className={styles.wrapper}>
             <div className={styles.head}>
-              <div className={cn("h2", styles.title)}>
-                Create single collectible
-              </div>
-              <button
+              <div className={cn("h3", styles.title)}>Create Swap (Single)</div>
+              {/* <button
                 className={cn("button-stroke button-small", styles.button)}
               >
                 Switch to Multiple
-              </button>
+              </button> */}
             </div>
-            <form className={styles.form} action="">
+            <form className={styles.form} action=''>
               <div className={styles.list}>
-                <div className={styles.item}>
+                {/* <div className={styles.item}>
                   <div className={styles.category}>Upload file</div>
                   <div className={styles.note}>
                     Drag or choose your file to upload
                   </div>
                   <div className={styles.file}>
-                    <input className={styles.load} type="file" />
+                    <input className={styles.load} type='file' />
                     <div className={styles.icon}>
-                      <Icon name="upload-file" size="24" />
+                      <Icon name='upload-file' size='24' />
                     </div>
                     <div className={styles.format}>
                       PNG, GIF, WEBP, MP4 or MP3. Max 1Gb.
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className={styles.item}>
-                  <div className={styles.category}>Item Details</div>
+                  <div className={styles.category}>Counterparty Assets</div>
                   <div className={styles.fieldset}>
                     <TextInput
                       className={styles.field}
-                      label="Item name"
-                      name="Item"
-                      type="text"
-                      placeholder='e. g. Redeemable Bitcoin Card with logo"'
+                      label='Wallet Name'
+                      name='Item'
+                      type='text'
+                      placeholder='terra1pn0cd6u5p5r5lq2xafk5eqxv'
                       required
                     />
-                    <TextInput
+                    {/* <TextInput
                       className={styles.field}
-                      label="Description"
-                      name="Description"
-                      type="text"
-                      placeholder="e. g. “After purchasing you will able to recived the logo...”"
+                      label='Description'
+                      name='Description'
+                      type='text'
+                      placeholder='e. g. “After purchasing you will able to recived the logo...”'
                       required
-                    />
+                    /> */}
                     <div className={styles.row}>
                       <div className={styles.col}>
                         <div className={styles.field}>
-                          <div className={styles.label}>Royalties</div>
+                          <div className={styles.label}>Swap Equivilent</div>
                           <Dropdown
                             className={styles.dropdown}
                             value={royalties}
@@ -105,31 +103,31 @@ const Upload = () => {
                           />
                         </div>
                       </div>
-                      <div className={styles.col}>
+                      {/* <div className={styles.col}>
                         <TextInput
                           className={styles.field}
-                          label="Size"
-                          name="Size"
-                          type="text"
-                          placeholder="e. g. Size"
+                          label='Size'
+                          name='Size'
+                          type='text'
+                          placeholder='e. g. Size'
                           required
                         />
-                      </div>
-                      <div className={styles.col}>
+                      </div> */}
+                      {/* <div className={styles.col}>
                         <TextInput
                           className={styles.field}
-                          label="Propertie"
-                          name="Propertie"
-                          type="text"
-                          placeholder="e. g. Propertie"
+                          label='Propertie'
+                          name='Propertie'
+                          type='text'
+                          placeholder='e. g. Propertie'
                           required
                         />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
               </div>
-              <div className={styles.options}>
+              {/* <div className={styles.options}>
                 <div className={styles.option}>
                   <div className={styles.box}>
                     <div className={styles.category}>Put on sale</div>
@@ -162,26 +160,26 @@ const Upload = () => {
                   Choose an exiting collection or create a new one
                 </div>
                 <Cards className={styles.cards} items={items} />
-              </div>
+              </div> */}
               <div className={styles.foot}>
                 <button
                   className={cn("button-stroke tablet-show", styles.button)}
                   onClick={() => setVisiblePreview(true)}
-                  type="button"
+                  type='button'
                 >
-                  Preview
+                  My Wallet
                 </button>
                 <button
                   className={cn("button", styles.button)}
                   onClick={() => setVisibleModal(true)}
                   // type="button" hide after form customization
-                  type="button"
+                  type='button'
                 >
-                  <span>Create item</span>
-                  <Icon name="arrow-next" size="10" />
+                  <span>Create Swap</span>
+                  <Icon name='arrow-next' size='10' />
                 </button>
                 <div className={styles.saving}>
-                  <span>Auto saving</span>
+                  <span>Processing</span>
                   <Loader className={styles.loader} />
                 </div>
               </div>
